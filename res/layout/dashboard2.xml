@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout style="@style/TitleBar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/poi_title_text"
+            android:id="@+id/title_poi_hint"/>
+
+        <View style="@style/TitleBarSpring" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:id="@+id/btn_title_refresh"
+            android:contentDescription="@string/description_refresh"
+            android:src="@drawable/ic_title_refresh"
+            android:onClick="onActionBarSettingButtonClick" />
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/ic_title_search"
+            android:onClick="onActionBarSearchButtonClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="6dip">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button android:id="@+id/action_one_button"
+                style="@style/HomeButton"
+                android:onClick="onActionOneClick"
+                android:text="@string/dashboard2_action1"
+                android:drawableTop="@drawable/dashboard_button_selector"/>
+            <Button android:id="@+id/action_two_button"
+                style="@style/HomeButton"
+                android:onClick="onActionTwoClick"
+                android:text="@string/dashboard2_action2"
+                android:drawableTop="@drawable/dashboard_button_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button android:id="@+id/action_three_button"
+                style="@style/HomeButton"
+                android:onClick="onActionThreeClick"
+                android:text="@string/dashboard2_action3"
+                android:drawableTop="@drawable/dashboard_button_selector"/>
+            <Button android:id="@+id/action_four_button"
+                style="@style/HomeButton"
+                android:onClick="onActionFourClick"
+                android:text="@string/dashboard2_action4"
+                android:drawableTop="@drawable/dashboard_button_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button android:id="@+id/action_five_button"
+                style="@style/HomeButton"
+                android:onClick="onActionFiveClick"
+                android:text="@string/dashboard2_action5"
+                android:drawableTop="@drawable/dashboard_button_selector"/>
+            <Button android:id="@+id/action_six_button"
+                style="@style/HomeButton"
+                android:onClick="onActionSixClick"
+                android:text="@string/dashboard2_action6"
+                android:drawableTop="@drawable/dashboard_button_selector"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+   <!--   <LinearLayout
+        android:id="@+id/now_playing_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/now_playing_height"
+        android:orientation="horizontal"
+        android:background="#eee"
+        android:gravity="center">
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="6dip"
+            android:indeterminate="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/now_playing_loading"/>
+    </LinearLayout>-->
+</LinearLayout>

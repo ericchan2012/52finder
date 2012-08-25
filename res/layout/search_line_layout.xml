@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/si_bian_bei_jing" >
+
+            <ImageView
+                android:id="@+id/header_change_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="7.0dip"
+                android:layout_marginTop="5.0dip"
+                android:clickable="true"
+                android:src="@drawable/bu_xing_icon" />
+
+            <TextView
+                android:id="@+id/header_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@id/header_change_img"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/header_hint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header_title_tv"
+                android:layout_marginLeft="7.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@id/header_change_img"
+                android:text="..."
+                android:textColor="@color/black_70" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/content_load"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/base_loading"
+                layout="@layout/base_loading" />
+
+            <include
+                android:id="@+id/base_loading_err"
+                layout="@layout/base_loading_err" />
+
+            <ListView
+                android:id="@+id/main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/search_backgrounds"
+                android:divider="@drawable/yellow_botted_line" />
+        </LinearLayout>
+        <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <com.baidu.mapapi.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+    </RelativeLayout>
+</LinearLayout>

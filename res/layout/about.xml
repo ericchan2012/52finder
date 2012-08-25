@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#fff8f8f9" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/ivLogo" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/about_test_top_margin_top"
+                android:paddingLeft="@dimen/about_test_top_margin"
+                android:paddingRight="@dimen/about_test_top_margin"
+                android:src="@drawable/splash_logo_about" />
+
+            <TextView
+                android:id="@+id/weiboName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLogo"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/about_test_top_logo"
+                android:text="@string/about_weibo"
+                android:textColor="#ff59626c"
+                android:textSize="@dimen/about_test_top_textsize1" />
+
+            <TextView
+                android:id="@+id/weiboVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weiboName"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/about_test_top_android"
+                android:textColor="#ff59626c"
+                android:textSize="@dimen/about_test_top_textsize1" />
+
+            <ImageView
+                android:id="@+id/aboutLine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weiboVersion"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/about_test_top_line"
+                android:paddingRight="@dimen/about_test_top_line"
+                android:paddingTop="@dimen/about_test_top_text"
+                android:src="@drawable/line" />
+
+            <TextView
+                android:id="@+id/weiboService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutLine"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/about_test_customer_top"
+                android:text="@string/about_service"
+                android:textColor="#ff59626c"
+                android:textSize="@dimen/about_test_customer_textsize" />
+
+            <RelativeLayout
+                android:id="@+id/about_person"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weiboService"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/about_test_button_margin"
+                android:layout_marginRight="@dimen/about_test_button_margin"
+                android:layout_marginTop="@dimen/about_test_top_button1" >
+
+                <Button
+                    android:id="@+id/aboutPersonButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/about_button" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/aboutPersonButton"
+                    android:layout_alignLeft="@+id/aboutPersonButton"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/about_test_image_margin"
+                    android:src="@drawable/about_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/aboutPersonButton"
+                    android:layout_alignLeft="@+id/aboutPersonButton"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/about_test_text_margin"
+                    android:text="@string/about_person_phone"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/about_test_button_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_person"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/about_test_button_margin"
+                android:layout_marginRight="@dimen/about_test_button_margin"
+                android:layout_marginTop="@dimen/about_test_top_button2" >
+
+                <Button
+                    android:id="@+id/aboutCompanyButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/about_button" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/aboutCompanyButton"
+                    android:layout_alignLeft="@+id/aboutCompanyButton"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/about_test_image_margin"
+                    android:src="@drawable/about_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/aboutCompanyButton"
+                    android:layout_alignLeft="@+id/aboutCompanyButton"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/about_test_text_margin"
+                    android:text="@string/about_company_phone"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/about_test_button_textsize" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/about_company"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/about_test_bottom"
+                android:src="@drawable/about_splash_copyright"
+                android:textColor="#ff59626c" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

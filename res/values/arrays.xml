@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string-array name="tabswitcher">
+        <item>附近所有poi</item>
+        <item>地图查看</item>
+    </string-array>
+   <string-array name="ranges">  
+        <item>500</item>  
+        <item>1000</item>
+        <item>1500</item>  
+        <item>2000</item>  
+        <item>3000</item>
+        <item>4000</item> 
+        <item>5000</item>   
+    </string-array>  
+    <string-array name="hotpoi">
+        <item>银行</item>
+        <item>餐厅</item>  
+        <item>超市</item>
+        <item>KTV</item> 
+        <item>加油站</item>
+        <item>洗车</item> 
+        <item>汽修</item>
+        <item>保养</item>
+        <item>4S店</item>
+        <item>车辆配件</item>     
+    </string-array>
+</resources>

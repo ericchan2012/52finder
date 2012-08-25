@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ds.finder"
+    android:sharedUserId="com.baidu.location"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".FinderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ds.inspiration.NotesList" android:label="@string/title_notes_list">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.inspiration.note" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.inspiration.note" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.ds.inspiration.NoteEditor"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="sensor"
+            android:configChanges="keyboardHidden|orientation"
+        >
+            <!-- This filter says that we can view or edit the data of
+                 a single note -->
+            <intent-filter android:label="@string/resolve_edit">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="com.android.notepad.action.EDIT_NOTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.inspiration.note" />
+            </intent-filter>
+
+            <!-- This filter says that we can create a new note inside
+                 of a directory of notes.  The INSERT action creates an
+                 empty note; the PASTE action initializes a new note from
+                 the current contents of the clipboard. -->
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <action android:name="android.intent.action.PASTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.inspiration.note" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="com.ds.inspiration.TitleEditor"
+            android:label="@string/title_edit_title"
+            android:icon="@drawable/ic_menu_edit"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:windowSoftInputMode="stateVisible">
+            <!-- This activity implements an alternative action that can be
+                 performed on notes: editing their title.  It can be used as
+                 a default operation if the user invokes this action, and is
+                 available as an alternative action for any note data. -->
+            <intent-filter android:label="@string/resolve_title">
+                <!-- This is the action we perform.  It is a custom action we
+                     define for our application, not a generic VIEW or EDIT
+                     action since we are not a general note viewer/editor. -->
+                <action android:name="com.android.notepad.action.EDIT_TITLE" />
+                <!-- DEFAULT: execute if being directly invoked. -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- ALTERNATIVE: show as an alternative action when the user is
+                     working with this type of data. -->
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <!-- SELECTED_ALTERNATIVE: show as an alternative action the user
+                     can perform when selecting this type of data. -->
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+                <!-- This is the data type we operate on. -->
+                <data android:mimeType="vnd.android.cursor.item/vnd.inspiration.note" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.ds.inspiration.NotesLiveFolder" android:label="@string/live_folder_name"
+            android:icon="@drawable/live_folder_notes">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ds.inspiration.InspirationActivity" >
+        </activity>
+        <activity android:name=".MarkLocationActivity" >
+        </activity>
+        <activity android:name=".POIActivity" >
+        </activity>
+        <activity android:name=".ListPoiActivity" >
+        </activity>
+        <activity android:name=".SearchLineActivity" >
+        </activity>
+        <activity
+            android:name="com.ds.todolist.ToDoListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.ds.todolist.delete_note" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ds.todolist.EditNoteActivity"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.ds.todolist.add_note" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ds.todolist.edit_note" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ds.todolist.ViewAllNotes"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.ds.todolist.ViewMonthNotes"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.ds.todolist.ViewNoteDetail"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.ds.todolist.AboutActivity" >
+        </activity>
+        <activity android:name="com.ds.todolist.MoreActivity" >
+        </activity>
+        <activity android:name="com.ds.inspiration.EditInspiration" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <provider android:name="com.ds.inspiration.NotePadProvider"
+            android:authorities="com.ds.inspiration.NotePad"
+            android:exported="true">
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+    </application>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+</manifest>

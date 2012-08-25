@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2010 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+
+    <dimen name="colorstrip_height">6dip</dimen>
+    <dimen name="now_playing_height">90dip</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="button_height">45.0dip</dimen>
+    <dimen name="bottom_tab_font_size">9.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="switch_logo_bottom_padding">30.0sp</dimen>
+    <dimen name="widget_height">100.0dip</dimen>
+    <dimen name="sta_height">48.0dip</dimen>
+    <dimen name="widget_write_margin_top">19.0dip</dimen>
+    <dimen name="widget_write_margin_left">10.0dip</dimen>
+    <dimen name="widget_content_margin_top">20.0dip</dimen>
+    <dimen name="widget_content_margin_left">10.0dip</dimen>
+    <dimen name="widget_logo_size">35.0dip</dimen>
+    <dimen name="title_height">74.0dip</dimen>
+    <dimen name="new_blog_size">70.0dip</dimen>
+    <dimen name="emotion_item_view_height">13.299988dip</dimen>
+    <dimen name="splash_test_center_margin_right">0.0dip</dimen>
+    <dimen name="group_item_height">40.0dip</dimen>
+    <dimen name="suggestion_item_height">40.0dip</dimen>
+    <dimen name="suggestion_item_title_height">16.669983dip</dimen>
+    <dimen name="square_pic_width">61.0dip</dimen>
+    <dimen name="square_pic_height">61.0dip</dimen>
+    <dimen name="square_item_width">60.0dip</dimen>
+    <dimen name="square_padding_left">20.0dip</dimen>
+    <dimen name="square_padding_top">8.0dip</dimen>
+    <dimen name="square_horizontalSpacing">8.0dip</dimen>
+    <dimen name="square_verticalSpacing">0.0dip</dimen>
+    <dimen name="square_page_item_padding">3.0dip</dimen>
+    <dimen name="square_height">265.0dip</dimen>
+    <dimen name="updatebar_height">62.0dip</dimen>
+    <dimen name="updatebar_content_height">60.0dip</dimen>
+    <dimen name="updatebar_padding">10.0dip</dimen>
+    <dimen name="userinfo_center_square_height">113.32999dip</dimen>
+    <dimen name="toolbar_height">45.0dip</dimen>
+    <dimen name="toolbar_padding_top">3.0dip</dimen>
+    <dimen name="dialog_updateversion_width">293.0dip</dimen>
+    <dimen name="dialog_updateversion_height">400.0dip</dimen>
+    <dimen name="searchbar_padding">5.0px</dimen>
+    <dimen name="searchbar_textsize">24.0px</dimen>
+    <dimen name="searchbar_paddingleft">30.0px</dimen>
+    <dimen name="searchbar_paddingright">126.0px</dimen>
+    <dimen name="searchbar_marginright">62.0px</dimen>
+    <dimen name="searchbar_radiobutton_padding">40.0dip</dimen>
+    <dimen name="searchbar_radiobutton_padding_user">55.0dip</dimen>
+    <dimen name="marginMedium">8.0dip</dimen>
+    <dimen name="wirte_msg_item_height">48.0dip</dimen>
+    <dimen name="image_dialog_max_width">300.0dip</dimen>
+    <dimen name="image_dialog_max_height">480.0dip</dimen>
+    <dimen name="map_width">290.0dip</dimen>
+    <dimen name="map_height">100.0dip</dimen>
+    <dimen name="loadmore_item_height">54.0dip</dimen>
+    <dimen name="reocrd_time_big">70.0sp</dimen>
+    <dimen name="reocrd_time_small">30.0sp</dimen>
+    <dimen name="btn_weibobrowser_btnspadding">1.3299866dip</dimen>
+    <dimen name="btn_weibobrowser_marginbottom">1.3299866dip</dimen>
+    <dimen name="weibobrowser_loadingbar_height">20.0dip</dimen>
+    <dimen name="weibobrowser_models_paddingleft">70.0dip</dimen>
+    <dimen name="weibobrowser_models_paddingright">70.0dip</dimen>
+    <dimen name="msg_btn_paddingsmall">6.0dip</dimen>
+    <dimen name="msg_btn_paddingbig">10.0dip</dimen>
+
+</resources>

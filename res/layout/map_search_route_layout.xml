@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/si_bian_bei_jing"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10.0dip" >
+
+        <ImageView
+            android:id="@+id/location_start"
+            android:layout_width="35.0dip"
+            android:layout_height="31.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="6.0dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/locate_btn"
+            android:onClick="onLocationStartClick"
+            android:scaleType="matrix" />
+
+        <ImageView 
+            android:id="@+id/location_end"
+            android:layout_width="35.0dip"
+            android:layout_height="31.0dip"
+            android:layout_alignRight="@id/location_start"
+            android:layout_below="@id/location_start"
+            android:layout_marginTop="8.0dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/locate_btn"
+            android:onClick="onLocationEndClick"
+            android:scaleType="matrix" />
+
+        <ImageView
+            android:id="@+id/switch_location"
+            android:layout_width="46.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/location_end"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/location_start"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/switch_position_btn"
+            android:onClick="onSwitchLocationClick"
+            android:scaleType="centerInside" />
+
+        <AutoCompleteTextView
+            android:id="@+id/start_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="31.0dip"
+            android:layout_alignTop="@id/location_start"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toLeftOf="@id/location_start"
+            android:layout_toRightOf="@id/switch_location"
+            android:background="@drawable/addr_input_background"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="@string/input_start"
+            android:imeOptions="actionDone"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/end_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="31.0dip"
+            android:layout_alignBottom="@id/location_end"
+            android:layout_alignTop="@id/location_end"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toLeftOf="@id/location_end"
+            android:layout_toRightOf="@id/switch_location"
+            android:background="@drawable/addr_input_background"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="@string/input_end"
+            android:imeOptions="actionDone"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <ProgressBar
+            android:id="@+id/start_progress"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignBottom="@id/location_start"
+            android:layout_alignTop="@id/location_start"
+            android:layout_margin="7.0dip"
+            android:layout_toLeftOf="@id/location_start"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/end_progress"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignBottom="@id/location_end"
+            android:layout_alignTop="@id/location_end"
+            android:layout_margin="7.0dip"
+            android:layout_toLeftOf="@id/location_end"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="9.0dip"
+        android:layout_marginTop="6.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/bus_route"
+                android:layout_width="68.0dip"
+                android:layout_height="36.0dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bus"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onBusRouteClick"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/drive_route"
+                android:layout_width="67.0dip"
+                android:layout_height="36.0dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/drive"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onDriveRouteClick"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/walk_route"
+                android:layout_width="68.0dip"
+                android:layout_height="36.0dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/walk"
+                android:onClick="onWalkRouteClick"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/route_search"
+            android:layout_width="90.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/route_search"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onRouteSearchClick"
+            android:paddingLeft="10.0dip"
+            android:text="@string/get_route"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout>

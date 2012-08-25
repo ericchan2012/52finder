@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <AutoCompleteTextView
+            android:id="@+id/title_poi_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/poi_title_text"
+            android:textSize="@dimen/text_size_small" />
+
+        <View style="@style/TitleBarSpring" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/ic_title_search"
+            android:onClick="onActionBarSearchButtonClick" />
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton
+            android:id="@+id/btn_title_refresh"
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_refresh"
+            android:onClick="onActionBarSettingButtonClick"
+            android:src="@drawable/ic_title_refresh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dp" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

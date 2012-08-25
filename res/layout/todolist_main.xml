@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/gridview_toolbar"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/list"
+                style="?android:attr/listViewWhiteStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/white"
+                android:drawSelectorOnTop="false"
+                android:fadingEdgeLength="16dip"
+                android:scrollbarStyle="insideOverlay" />
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/empty"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gridview_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/maintab_toolbar_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:text="@string/menu" />
+
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="150px"
+                android:layout_height="56px"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/geyan" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="10px"
+                android:text="@string/add" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

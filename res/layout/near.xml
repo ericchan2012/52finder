@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.ds.finder"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <View style="@style/TitleBarSpring" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            android:id="@+id/btn_title_refresh"
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_refresh"
+            android:onClick="onActionBarRefreshButtonClick"
+            android:src="@drawable/ic_title_refresh" />
+    </LinearLayout>
+
+    <com.baidu.mapapi.MapView
+        android:id="@+id/map_View"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"/>
+
+</LinearLayout>

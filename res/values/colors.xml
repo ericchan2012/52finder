@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2010 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <color name="title_background">#ffdddddd</color>
+    <color name="title_text">#ffffffff</color>
+    <color name="title_text_alt">#ff000000</color>
+    <color name="foreground1">#ff355689</color>
+    <color name="foreground2">#ff7081a3</color>
+    <color name="background1">#ffffffff</color>
+    <color name="background2">#ffd5ddeb</color>
+    <color name="background3">#ffe3e8f1</color>
+    <color name="title_separator">#40ffffff</color>
+
+    <color name="session_foreground_past">#ff999999</color>
+
+    <color name="pinned_header_background">#ff202020</color>
+    
+        <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="attention_headview_bg">#ffe9e4de</color>
+    <color name="black_70">#99000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="base_text_linked_color">#ff2571ef</color>
+    <color name="page_background_color">#ffe9e2d3</color>
+    <color name="transparent">#00000000</color>
+    <color name="find_list_middlesize_text_color">#ff828282</color>
+    <color name="find_list_tinysize_text_color">#ff5a5a5a</color>
+    <color name="find_list_username_text_color">#ff7b715c</color>
+    <color name="find_list_distance_text_color">#ff828282</color>
+    <color name="find_list_vote_text_color">#ffb7a37a</color>
+    <color name="find_list_backgrounds_color">#fff5f2eb</color>
+    <color name="find_list_backgrounds_clicked_color">#fff6e8c8</color>
+    <color name="commodity_details_name_color">#ffc00000</color>
+    <color name="commodity_details_backgrounds_color">#ffe9e2d3</color>
+    <color name="commodity_details_customer_count_color">#ff828282</color>
+    <color name="commodity_details_shop_address_color">#ff828282</color>
+    <color name="commodity_details_pic_user_color">#ff7b715c</color>
+    <color name="commodity_details_pic_comment_color">#ff828282</color>
+    <color name="commodity_details_time_color">#ff7b715c</color>
+    <color name="search_backgrounds">#fff5f2eb</color>
+    <color name="search_input_text_color">#ffadadad</color>
+    <color name="search_category_text_color">#ff373737</color>
+    <color name="search_hot_business_text_color">#ff373737</color>
+    <color name="search_result_text_color">#ff636363</color>
+    <color name="shop_info_num_color">#ffa70000</color>
+    <color name="shop_info_text_color">#ff454545</color>
+    <color name="shop_info_commodity_count">#ffa70000</color>
+    <color name="shop_info_commodity_vote">#ffb7a37a</color>
+    <color name="shop_info_comment_count">#ffa70000</color>
+    <color name="shop_info_comment_score_text">#ff7b715c</color>
+    <color name="shop_info_comment_content">#ff5a5a5a</color>
+    <color name="change_color_one">#ff4d87c7</color>
+    <color name="change_color_one_pressed">#ff38006b</color>
+    <color name="change_color_one_focused">#ff38006b</color>
+    <color name="comment_list_background">#fff5f2eb</color>
+    <color name="take_photo_background">#ffe9e2d3</color>
+    <color name="take_photo_frame_background">#ff434343</color>
+    <color name="take_photo_select_shop_background">#fff5f2eb</color>
+    <color name="take_photo_commandity_text_color">#ffa70000</color>
+    <color name="take_photo_shopname_text_color">#ff545454</color>
+    <color name="take_photo_syn_text_color">#ffadadad</color>
+    <color name="take_photo_score_text_color">#fff8880b</color>
+    <color name="pic_vote_red">#ffdf3828</color>
+    <color name="color_distance">#ff828282</color>
+    <color name="tab_text_red">#ffbe0101</color>
+    <color name="about_text_color">#ff3b3b3b</color>
+    <color name="about_text_linked_color">#ff2571ef</color>
+    <color name="about_side_color">#ffdfdfdf</color>
+    <color name="about_bg_color">#fff8f8f8</color>
+    <color name="comment_item_bg">#fff9eeda</color>
+    <color name="title_red">#ffb91617</color>
+    <color name="title_black">#ff454545</color>
+    <color name="description_gray">#ff636363</color>
+    <color name="address_gray">#ff959595</color>
+    <color name="tip_brown">#ffa69485</color>
+    <color name="username_brown">#ffc7a670</color>
+    <color name="background">#fffcfbf9</color>
+    <color name="background_top_detail">#ffeeebe6</color>
+    <color name="background_top_search">#ffe3ded5</color>
+    <color name="comment_detial_button">#ffcccccc</color>
+</resources>

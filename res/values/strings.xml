@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weibo_check_update">检测新版本</string>
+    <string name="weibo_officialweibo">官方微博</string>
+    <string name="skin_list">主题管理</string>
+    <string name="weibo_readmode">浏览模式</string>
+    <string name="weibo_account_manage">帐号管理</string>
+    <string name="menu_settings">设置</string>
+    <string name="delete">删除</string>
+    <string name="app_name">发现</string>
+    <string name="menu">菜单</string>
+    <string name="dashboard_action1">附近</string>
+    <string name="dashboard_action2">日程</string>
+    <string name="dashboard_action3">九宫格</string>
+    <string name="dashboard_action4">灵感</string>
+    <string name="dashboard_action5">乐子</string>
+    <string name="dashboard_action6">更多</string>
+    <string name="description_logo">Google I/O 2010</string>
+    <string name="description_home">Home</string>
+    <string name="description_search">Search</string>
+    <string name="description_map">Map</string>
+    <string name="description_refresh">Refresh</string>
+    <string name="description_share">Share</string>
+    <string name="description_export">Export</string>
+    <string name="description_star">Star</string>
+    <string name="now_playing_loading">Looking up nearby sessions\u2026</string>
+    <string name="open_gps">Please open gps first!</string>
+    <string name="now_loc_loading">Loading...</string>
+    <string name="poi_title_text">您可以按右边按钮设置范围</string>
+    <string name="dashboard2_action1">银行</string>
+    <string name="dashboard2_action2">餐厅</string>
+    <string name="dashboard2_action3">加油站</string>
+    <string name="dashboard2_action4">超市</string>
+    <string name="dashboard2_action5">KTV</string>
+    <string name="dashboard2_action6">更多</string>
+    <string name="set_range">设置范围(米)</string>
+    <string name="confirm">"确定"</string>
+    <string name="input_start">输入起点...</string>
+    <string name="input_end">输入终点...</string>
+    <string name="get_route">获取路线</string>
+	<string name="try_again"></string>
+	<string name="loading_err"></string>
+	<string name="loading"></string>
+	<string name="shop_name_tag">商户名</string>
+	<string name="my_location">我的位置</string>
+	
+	<string name="date">日期</string>
+    <string name="toDoLabel">添加要做的事</string>
+    <string name="max_length">已经达到最大长度，请简洁，简单才是美！</string>
+    <string name="add_hint">请输入要做的事</string>
+    <string name="empty">今天还没写要做的事哦</string>
+    <string name="add">添加</string>
+    <string name="edit">编辑</string>
+    <string name="allnotes">归档</string>
+    <string name="sharenote">分享</string>
+    <string name="todo"> To do</string>
+    <string name="isFinished">完成</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="checknote">检查</string>
+    <string name="check_msg">检查</string>
+    <string name="geyan">快乐生活，快乐日记！</string>
+    <string name="weibo_detail">正文</string>
+    <string name="weibo_about">关于</string>
+    <string name="weibo_feedback">意见反馈</string>
+    <string name="save">保存</string>
+    <string name="back">返回首页</string>
+    <string name="about_weibo">新浪微博Android版</string>
+    <string name="about_version">版</string>
+    <string name="about_service">客服电话（按当地市话标准收费）</string>
+    <string name="about_person_phone">个人用户：4000 960 960</string>
+    <string name="about_company_phone">企业用户：4000 980 980</string>
+    <string name="cancel">取消</string>
+    
+    <string name="live_folder_name">Notes</string>
+
+    <string name="title_edit_title">Note title:</string>
+    <string name="title_create">New note</string>
+    <string name="title_edit">Edit: %1$s</string>
+    <string name="title_notes_list">Notes</string>
+
+    <string name="menu_add">New note</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_open">Open</string>
+    <string name="menu_revert">Revert changes</string>
+    <string name="menu_copy">Copy</string>
+    <string name="menu_paste">Paste</string>
+
+    <string name="button_ok">OK</string>
+    <string name="text_title">Title:</string>
+
+    <string name="resolve_edit">Edit note</string>
+    <string name="resolve_title">Edit title</string>
+
+    <string name="error_title">Error</string>
+    <string name="error_message">Error loading note</string>
+    <string name="nothing_to_save">There is nothing to save</string>
+</resources>
